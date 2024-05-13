@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
+  /* main-section-container */
+  #main-section-container {
+    overflow: hidden;
+  }
+  
+  #hero-section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  #hero-section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #story-section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /*  scrollBtn Transitions */
+  .storyScrollBtns {
+    /* transition: all 0.5s ease; */
+    scroll-behavior: smooth;
+  }
+  
+  #caption::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .searchSection {
+    left: -400px;
+    background-color: black;
+    transition: left 1s ease;
+  }
+  
+  .dara li a span p::-webkit-scrollbar {
+    display: none;
+  }
