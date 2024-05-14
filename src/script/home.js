@@ -4,6 +4,8 @@ for (let i = 1; i <= 10; i++) {
   feedSection.innerHTML += homeHtml;
 }
 
+const shoeAllCmntBnts = document.querySelectorAll(".show-all-comments-btn");
+const allCmntsContainer = document.querySelectorAll(".allCmntsContainer");
 const readMoreBtns = document.querySelectorAll(".readMore");
 const caption = document.querySelectorAll(".caption");
 const likeCounts = document.querySelectorAll(".like-count");
@@ -12,7 +14,7 @@ let isDrawerOn = false;
 const likeBtns = document.querySelectorAll(".likeBtn");
 const saveBtns = document.querySelectorAll(".saveBtn");
 
-likeBtns.forEach((likeBtn,index) => {
+likeBtns.forEach((likeBtn, index) => {
   likeBtn.addEventListener("click", () => {
     let likeBtnParent = likeBtn.parentElement;
     if (likeBtn.classList.contains("fa-regular")) {
@@ -27,7 +29,6 @@ likeBtns.forEach((likeBtn,index) => {
       likeBtn.style.color = "white";
       likeBtnParent.setAttribute("data-tip", "Like");
       removeLike(index);
-      
     }
     function addLike(i) {
       likeCounts[i].innerText++;
@@ -71,5 +72,13 @@ readMoreBtns.forEach((readMoreBtn, index) => {
     } else {
       readMoreBtn.classList.add("hidden");
     }
+  });
+});
+
+shoeAllCmntBnts.forEach((showCmntBtn, index) => {
+  showCmntBtn.addEventListener("click", () => {
+    let showCmntBtnPrnt = showCmntBtn.parentElement;
+    showCmntBtnPrnt.classList.toggle("h-4");
+    // allCmntsContainer[index]
   });
 });

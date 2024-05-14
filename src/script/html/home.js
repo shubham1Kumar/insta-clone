@@ -49,9 +49,41 @@ export const homeHtml = `<div class="card w-[26rem] border border-[#4b4a4a]">
         </div>
     </div>
     <div class=" h-fit">
-        <div class="opacity-75 w-fit cursor-pointer text-xs">
-            View all 39 comments
-        </div>
+    <div class="opacity-75 h-4 overflow-hidden w-full cursor-pointer text-xs">
+                                <span class="show-all-comments-btn">
+                                    View all 39 comments
+                                </span>
+                                <div class="allCmntsContainer my-4 ">
+                                    <div class="chat chat-start mb-2 ">
+                                        <div class="chat-header text-xs">
+                                            <a href="#">Obi-Wan Kenobi</a>
+                                            <time class="text-xs ml-1 opacity-50">2 hours ago</time>
+                                        </div>
+                                        <div class="chat-bubble ">You were the Chosen One!</div>
+                                    </div>
+                                    <div class="chat chat-start mb-2 ">
+                                        <div class="chat-header text-xs">
+                                            <a href="#">Obi-Wan Kenobi</a>
+                                            <time class="text-xs ml-1 opacity-50">2 hours ago</time>
+                                        </div>
+                                        <div class="chat-bubble ">You were the Chosen One!</div>
+                                    </div>
+                                    <div class="chat chat-start mb-2 ">
+                                        <div class="chat-header text-xs">
+                                            <a href="#">Obi-Wan Kenobi</a>
+                                            <time class="text-xs ml-1 opacity-50">2 hours ago</time>
+                                        </div>
+                                        <div class="chat-bubble ">You were the Chosen One!</div>
+                                    </div>
+                                    <div class="chat w-full chat-end mb-2 ">
+                                        <div class="chat-header text-xs">
+                                            <a href="#">Obi-Wan Kenobi</a>
+                                            <time class="text-xs ml-1 opacity-50">2 hours ago</time>
+                                        </div>
+                                        <div class="chat-bubble ">You were the Chosen One!</div>
+                                    </div>
+                                </div>
+                            </div>
         <form class="w-full mt-2 text-xs" id="form">
             <input type="text" class=" pb-2 outline-none w-full bg-transparent border-b"
                 placeholder="Add a comment…">
